@@ -1,0 +1,786 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+
+
+    font-family: Arial, sans-serif;
+    padding: 10px 0;
+}
+
+nav {
+    overflow: hidden;
+    padding: 10px;
+
+
+
+}
+
+hr {
+    opacity: 0.3;
+    margin: 20px auto;
+    max-width: 50%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 160px;
+
+
+}
+
+.left-side-icon i,
+.right-icon i {
+    margin-right: 30px;
+    cursor: pointer;
+
+}
+
+.middle-logo img {
+    padding: 0;
+    object-fit: cover;
+
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    gap: 28px;
+}
+
+.menu a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: inherit;
+    margin: 0;
+    padding: 14px 12px;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.hero {
+    display: flex;
+    padding: 25px 160px;
+    background-color: #edeff2;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.hero-left {
+    flex: 2;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-right {
+    flex: 1;
+    position: relative;
+}
+
+.hero-left h1 {
+    font-size: 38px !important;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.hero-left p {
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+}
+
+.collection {
+    background-color: black;
+    color: white;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    width: max-content;
+}
+
+.hero-right img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.inner-hero {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 260px;
+    left: 160px;
+}
+
+.hero-right i {
+    position: absolute;
+    top: 270px;
+    left: 170px;
+    z-index: 1;
+    height: 100px;
+    width: 50px;
+    font-size: 32px !important;
+}
+
+.first-section {
+
+    margin-bottom: 20px;
+}
+
+.box {
+
+    height: 500px;
+    width: 80%;
+    margin: 0;
+
+    box-sizing: border-box;
+    display: flex;
+    gap: 0px;
+    box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.03) !important;
+    position: relative;
+    top: -70px;
+    left: 10%;
+    background-color: white;
+    z-index: 1;
+
+}
+
+.left-box,
+.right-box {
+
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.left-box {
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: white;
+    padding: 60px;
+
+
+}
+
+.right-box {
+
+    background-image: url(./images/bgimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.03) !important;
+}
+
+.discount {
+    align-items: center;
+    padding: 60px;
+    display: flex;
+    gap: 50px;
+}
+
+.discount h2 {
+    font-size: 2.5rem;
+}
+
+.discount p {
+    font-size: 1.5rem;
+}
+
+.discount button {
+    background-color: white;
+    color: black;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    width: max-content;
+    font-size: 1.5rem;
+}
+
+.intro-box {
+    display: flex;
+    gap: 15px;
+
+    align-items: center;
+
+}
+
+.intro-box img {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+
+}
+
+.box-name {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.box-name h3 {
+    font-weight: 800;
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.intro-text h2 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.discount {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+
+
+
+}
+
+.pack {
+
+    display: flex;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.pack-boxes {
+    display: flex;
+    gap: 30px;
+}
+
+.one-box,
+.two-box,
+.three-box,
+.four-box {
+    height: 400px;
+    width: 290px;
+
+    border-radius: 5%;
+}
+
+.one-box {
+    background-image: url(./images/shoe2.jpg);
+}
+
+.two-box {
+    background-image: url(./images/shoe1.jpg);
+}
+
+.three-box {
+    background-image: url(./images/shoe3.jpg);
+}
+
+.four-box {
+    background-image: url(./images/shoe4.jpg);
+}
+
+.one-prod,
+.two-prod,
+.three-prod,
+.four-prod {
+    height: 400px;
+    width: 290px;
+
+    border-radius: 5%;
+}
+
+.third-section {
+    margin-bottom: 300px;
+
+}
+
+.product-pack {
+    display: flex;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.product-boxes {
+    display: flex;
+    gap: 30px;
+}
+
+.one-prod {
+    background-image: url(./images/zara.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.two-prod {
+    background-image: url(./images/timex\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.three-prod {
+    background-image: url(./images/addidas\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.four-prod {
+    background-image: url(./images/New\ Balance\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product-box-1,
+.product-box-2,
+.product-box-3,
+.product-box-4 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-details button {
+    background-color: black;
+    color: white;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    width: max-content;
+    font-size: 1.5rem;
+}
+
+.fourth-section {
+    margin-bottom: 300px;
+}
+
+.one-prods,
+.two-prods,
+.three-prods,
+.four-prods {
+    height: 400px;
+    width: 290px;
+
+    border-radius: 5%;
+}
+
+.one-prods {
+    background-image: url(./images/bag\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.two-prods {
+    background-image: url(./images/shirt\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.three-prods {
+    background-image: url(./images/shirtguy\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.four-prods {
+    background-image: url(./images/ets\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fifth-section {
+    padding: 0;
+}
+
+.dod {
+    display: flex;
+    gap: 200px;
+    justify-content: space-around;
+    height: 400px;
+    width: 80%;
+    margin: 150px;
+    align-items: center;
+    box-shadow: 10px 32px 15px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 2%;
+    background-image: url(./images/alex-bierwagen-5tW1ca0Zq18-unsplash.jpg);
+}
+
+.dod-text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px;
+    color: white;
+}
+
+.dod-text h2 {
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+.dod-text button {
+    background-color: white;
+    color: black;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    width: max-content;
+    font-size: 1.5rem;
+}
+
+.deal-number {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.deal-number h2 {
+    font-size: 10rem;
+    font-weight: 800;
+}
+
+.feedback {}
+
+.contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.clients {
+    height: 400px;
+    width: 80%;
+
+    display: flex;
+    gap: 40px;
+}
+
+.client-1,
+.client-2,
+.client-3 {
+
+    height: 200px;
+    width: inherit;
+    border-radius: 3%;
+    box-shadow: 10px 32px 15px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 40px;
+}
+
+.trending {
+
+    color: white;
+    padding: 10px 70px;
+    background-color: #151515;
+    box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.03) !important;
+}
+#footer{
+    background-color: #151515;
+}
+
+.trend-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.containers4 {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    color: white;
+
+}
+
+.cont {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont img {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
+.cont p {
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.first-part {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.first-part i {
+    color: white;
+}
+
+.down-nav {
+
+    background-color: rgb(18, 18, 18);
+    height: 80px;
+    align-items: center;
+    display: none;
+    animation-name: slideInFromBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    transform-origin: bottom;
+}
+@keyframes slideInFromBottom {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+
+
+
+
+
+.footer-mid-section {
+    padding-left: 70px !important;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.down-nav .navbar i {
+    color: white;
+}
+
+.down-nav .right-icon a {
+    color: rgb(198, 212, 224);
+}
+
+.down-nav .right-icon .dropbtn {
+    color: rgb(198, 212, 224);
+}
+
+.copyright {
+    background-color: rgb(18, 18, 18);
+    color: wheat;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 70px !important;
+    justify-content: space-between;
+}
+
+.all-area {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    line-height: 30px;
+    background-color: #151515;
+    color: white;
+}
+
+.about-achievments,
+.quick-useful,
+.important-info,
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.all-area li {
+    color: white;
+    text-decoration: underline;
+    list-style-type: none;
+}
+
+.all-area h3 {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.all-area p {
+    color: rgb(164, 157, 138);
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px;
+}
+
+.address,
+.phone,
+.email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.address-location,
+.phone-num,
+.email-addy {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    line-height: 10px;
+
+}
+
+.address-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+
+
+
+@media screen and (max-width:628px) {
+    nav{
+        border: 2px solid red;
+    }
+    
+    .navbar{
+        width: 100%;
+        margin: 0 !important;
+        border: 2px solid black;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+    }
+    .left-side-icon, .right-icon{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      
+
+    }
+
+    .left-side-icon{
+        padding-left: 25px;
+    }
+    
+}
